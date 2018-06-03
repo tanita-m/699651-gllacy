@@ -15,6 +15,13 @@
       <ul class="site-navigator">
         <li>
           <a href="catalog.html">Каталог</a>
+          <ul class="catalog catalog-menu">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="catalog/shcherbet.html">Щербеты </a></li>
+              <li><a href="catalog/led.html">Фруктовый лед</a></li>
+              <li><a href="catalog/melorin">Мелорин</a></li>
+          </ul>
         </li>
         <li>
           <a href="#">Доставка и оплата</a>
@@ -23,11 +30,75 @@
           <a href="#">О компании</a>
         </li>
       </ul>
+
       <ul class="user-navigation">
-        <li class="search">Поиск</li>
-        <li class="login-link">Вход</li>
-        <li class="cart">Корзина</li>
+
+        <li class="search">Поиск
+          <ul>
+            <li>
+              <!--Тут будет форма-->
+            </li>
+          </ul>
+        </li>
+                
+        <li class="login-link">Вход
+           <ul>
+             <li>
+                <!--Форма e-mail-->
+                <!--Форма password-->
+                <button type="button">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </li>
+           </ul>
+        </li>
+        <li class="cart">Корзина
+          <ul>
+            <li>
+              <table>
+                <tr>
+                  <td>
+                    <a href="#">x</a>
+                  </td>
+                  <td>
+                    <img src="http://placehold.it/34x34" width="34" height="34" alt="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td>
+                    Пломбир с апельсиновым джемом
+                  </td>
+                  <td>
+                    1,5 кг x <span>200 руб.</span>
+                  </td>
+                  <td>
+                    300 руб.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">x</a>
+                  </td>
+                  <td>
+                    <img src="http://placehold.it/34x34" width="34" height="34" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td>
+                    Клубничный пломбир с присыпкой из белого шоколада
+                  </td>
+                  <td>
+                    1,5 кг x <span>300 руб.</span>
+                  </td>
+                  <td>
+                    450 руб.
+                  </td>
+                </tr>            
+              </table>
+              <hr>
+              <b>Итого: 750 руб.</b>
+              <button  type="button">Оформить заказ</button>
+            </li>     
+          </ul>
+        </li>
       </ul>
+
       <ul class="working-hours">
         <li>С 10 до 20, ежедневно</li>
       </ul>
@@ -207,86 +278,7 @@
         <a href="#">HTMLAcademy</a> &#169;2017
       </p>
     </div>
-  </footer>
-
-  <section class="popup">
-    <div class="popup-catalog">
-      <p>
-        <b>Новинки</b>
-      </p>
-      <p>Сливочное</p>
-      <p>Щербеты</p>
-      <p>Фруктовый лед</p>
-      <p>Мелорин</p>
-    </div>
-  </section>
-
-  <section class="popup">
-    <div class="popup-search">
-      <!--Тут будет форма-->
-    </div>
-  </section>
-
-  <section class="popup">
-    <div class="popup-login">
-      <!--Форма e-mail-->
-      <!--Форма password-->
-      <button type="button">Войти</button>
-      <ul class="popup-login-password">
-        <li>
-          <a href="#">Забыли пароль?</a>
-        </li>
-        <li>
-          <a href="#">Новая регистрация</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="popup">
-    <div class="popup-cart">
-      <table>
-        <tr>
-          <td>
-            <a href="#">x</a>
-          </td>
-          <td>
-            <img src="http://placehold.it/34x34" width="34" height="34" alt="Пломбир с апельсиновым джемом">
-          </td>
-          <td>
-            Пломбир с апельсиновым джемом
-          </td>
-          <td>
-            1,5 кг x <span>200 руб.</span>
-          </td>
-          <td>
-            300 руб.
-          </td>
-        </tr>
-        <tr>
-            <td>
-              <a href="#">x</a>
-            </td>
-            <td>
-              <img src="http://placehold.it/34x34" width="34" height="34" alt="Клубничный пломбир с присыпкой из белого шоколада">
-            </td>
-            <td>
-              Клубничный пломбир с присыпкой из белого шоколада
-            </td>
-            <td>
-              1,5 кг x <span>300 руб.</span>
-            </td>
-            <td>
-              450 руб.
-            </td>
-          </tr>            
-      </table>
-      <hr>
-      <b>Итого: 750 руб.</b>
-      <button  type="button">Оформить заказ</button>
-
-    </div>
-  </section>
+  </footer>  
 </body>
 
 </html>
