@@ -33,27 +33,37 @@
 
       <ul class="user-navigation">
 
-        <li class="search">Поиск
-          <div>
-            <!--Тут будет форма-->
-          </div>
+        <li class="search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="search">Что ищем?</label>
+          <input class="search-icon" type="text" name="search" placeholder=" Что ищем?">
+          </form>
         </li>
                 
         <li class="login-link">Вход
-           <div>
-              <!--Форма e-mail-->
-              <!--Форма password-->
-              <button type="button">Войти</button>
+           <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label class="visually-hidden" for="user-mail">Электронная почта</label>
+                <input class="login-icon-user" type="text" name="user-mail" placeholder="Электронная почта">
+              </p>
+              
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" type="user-password" name="password" placeholder="Пароль">
+              </p>
+
+              <button class="button" type="submit">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
-           </div>
+            </form>
+
         </li>
         <li class="cart">Корзина
-          <div>
+          <div class="cart cart-products">
             <table>
               <tr>
                 <td>
-                  <a href="#">x</a>
+                  <button class="modal-close" type="button">Удалить</button>
                 </td>
                 <td>
                   <img src="img/ice-cream-1.jpg" width="34" height="34" alt="Пломбир с апельсиновым джемом">
@@ -70,7 +80,7 @@
               </tr>
               <tr>
                 <td>
-                  <a href="#">x</a>
+                  <button class="modal-close" type="button">Удалить</button>
                 </td>
                 <td>
                   <img src="img/ice-cream-3.jpg" width="34" height="34" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -202,17 +212,23 @@
     </article>
 
     <article class="mailing">
+      <form class="mailing-form" action="https://echo.htmlacademy.ru" method="POST">
       <h2 class="visually-hidden">Рассылка</h2>
       <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
         и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <!--Тут будет форма-->
+      <label class="visually-hidden" for="user-mailing">Электронная почта</label>
+      <input class="mailing-icon" type="text" name="user-mailing" placeholder="Электронная почта">
+      <button  type="button">Отправить</button>
+      </form>
     </article>
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map.jpg" width="1200" height="430" alt="Мороженое сливочное с подливкой">
+      <img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class="modal-close" type="button">Закрыть</button>
+
       <div class="contacts">
         <p>Адрес главного офиса и офлайн-магазина:</p>
 
@@ -228,6 +244,28 @@
         <p> (с 10 до 20 ежедневно)</p>
         <a class="button" href="#">Форма обратной связи</a>
       </div>
+
+      <div class="popup">
+        <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+          <h2 class="visually-hidden">Обратная связь</h2>
+          <p>
+              <label class="visually-hidden" for="user-name">Как вас зовут?</label>
+              <input class="login-icon-user" type="text" name="user-name" placeholder="Как вас зовут?">
+          </p>
+            
+          <p>
+            <label class="visually-hidden" for="mail">Ваша почта для ответа?</label>
+            <input class="login-icon-password" type="text" name="mail" placeholder="Ваша почта для ответа?">
+          </p>
+          <p>
+              <label class="visually-hidden" for="writing ">Напишите что-нибудь</label>
+              <input class="login-icon-password" type="text" name="writing " placeholder="Напишите что-нибудь...">
+          </p>
+    
+          <a class="button" href="#">Отправить</a>
+        </form>
+      </div>
+
     </section>
   </main>
 
@@ -236,16 +274,16 @@
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
         <li>
-          <a class="social-button" href="#">Twitter</a>
+          <a class="social-button" href="#" aria-label="Twitter">Twitter</a>
         </li>
         <li>
-          <a class="social-button" href="#">Instagram</a>
+          <a class="social-button" href="#" aria-label="Instagram">Instagram</a>
         </li>
         <li>
-          <a class="social-button" href="#">Facebook</a>
+          <a class="social-button" href="#" aria-label="Facebook">Facebook</a>
         </li>
         <li>
-          <a class="social-button" href="#">ВКонтакте</a>
+          <a class="social-button" href="#" aria-label="ВКонтакте">ВКонтакте</a>
         </li>
       </ul>
     </div>
@@ -277,7 +315,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a> &#169;2017
       </p>
     </div>
-  </footer>  
+  </footer>   
 </body>
 
 </html>

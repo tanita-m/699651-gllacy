@@ -21,7 +21,7 @@
               <li><a href="catalog/shcherbet.html">Щербеты </a></li>
               <li><a href="catalog/led.html">Фруктовый лед</a></li>
               <li><a href="catalog/melorin">Мелорин</a></li>
-          </ul>
+      </ul>
         </li>
         <li>
           <a href="#">Доставка и оплата</a>
@@ -32,28 +32,38 @@
       </ul>
 
       <ul class="user-navigation">
-        <li class="search">Поиск
-            <div>
-              <!--Тут будет форма-->
-            </div>
-          </li>
-                  
+
+        <li class="search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="search">Что ищем?</label>
+          <input class="search-icon" type="text" name="search" placeholder=" Что ищем?">
+          </form>
+        </li>
+                
         <li class="login-link">Вход
-            <div>
-              <!--Форма e-mail-->
-              <!--Форма password-->
-              <button type="button">Войти</button>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label class="visually-hidden" for="user-mail">Электронная почта</label>
+                <input class="login-icon-user" type="text" name="user-mail" placeholder="Электронная почта">
+              </p>
+              
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" type="user-password" name="password" placeholder="Пароль">
+              </p>
+
+              <button class="button" type="submit">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
-            </div>
-        </li>
+            </form>
 
+        </li>
         <li class="cart">Корзина
-          <div>
+          <div class="cart cart-products">
             <table>
               <tr>
                 <td>
-                  <a href="#">x</a>
+                  <button class="modal-close" type="button">Удалить</button>
                 </td>
                 <td>
                   <img src="img/ice-cream-1.jpg" width="34" height="34" alt="Пломбир с апельсиновым джемом">
@@ -70,7 +80,7 @@
               </tr>
               <tr>
                 <td>
-                  <a href="#">x</a>
+                  <button class="modal-close" type="button">Удалить</button>
                 </td>
                 <td>
                   <img src="img/ice-cream-3.jpg" width="34" height="34" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -88,7 +98,7 @@
             </table>
             <hr>
             <b>Итого: 750 руб.</b>
-            <button  type="button">Оформить заказ</button>    
+            <button  type="button">Оформить заказ</button>
           </div>
         </li>
       </ul>
@@ -213,18 +223,18 @@
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
         <li>
-          <a class="social-button" href="#">Twitter</a>
+          <a class="social-button" href="#" aria-label="Twitter">Twitter</a>
         </li>
         <li>
-          <a class="social-button" href="#">Instagram</a>
+          <a class="social-button" href="#" aria-label="Instagram">Instagram</a>
         </li>
         <li>
-          <a class="social-button" href="#">Facebook</a>
+          <a class="social-button" href="#" aria-label="Facebook">Facebook</a>
         </li>
         <li>
-          <a class="social-button" href="#">ВКонтакте</a>
+          <a class="social-button" href="#" aria-label="ВКонтакте">ВКонтакте</a>
         </li>
-      </ul>
+        </ul>
     </div>
     <h2 class="visually-hidden">Документация</h2>
     <div class="links">
