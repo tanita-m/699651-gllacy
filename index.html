@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Глейси</title>
 </head>
 
@@ -49,7 +50,7 @@
               
               <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-icon-password" type="user-password" name="password" placeholder="Пароль">
+                <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
               </p>
 
               <button class="button" type="submit">Войти</button>
@@ -59,47 +60,7 @@
 
         </li>
         <li class="cart">Корзина
-          <div class="cart cart-products">
-            <table>
-              <tr>
-                <td>
-                  <button class="modal-close" type="button">Удалить</button>
-                </td>
-                <td>
-                  <img src="img/ice-cream-1.jpg" width="34" height="34" alt="Пломбир с апельсиновым джемом">
-                </td>
-                <td>
-                  Пломбир с апельсиновым джемом
-                </td>
-                <td>
-                  1,5 кг x <span>200 руб.</span>
-                </td>
-                <td>
-                  300 руб.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button class="modal-close" type="button">Удалить</button>
-                </td>
-                <td>
-                  <img src="img/ice-cream-3.jpg" width="34" height="34" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                </td>
-                <td>
-                  Клубничный пломбир с присыпкой из белого шоколада
-                </td>
-                <td>
-                  1,5 кг x <span>300 руб.</span>
-                </td>
-                <td>
-                  450 руб.
-                </td>
-              </tr>            
-            </table>
-            <hr>
-            <b>Итого: 750 руб.</b>
-            <button  type="button">Оформить заказ</button>
-          </div>
+          <p>Пусто</p>
         </li>
       </ul>
 
@@ -121,18 +82,19 @@
         <img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
         <a class="button" href="catalog.html">Давайте оба!</a>
       </div>
-      <div class="slide">
+      <div class="visually-hidden slide">
         <p>Шоколадный пломбир и лимонный сорбет</p>
         <img src="img/slide-2.png" width="1065" height="859" alt="Пломбир и сорбет">
         <a class="button" href="catalog.html">Давайте оба!</a>
       </div>
-      <div class="slide">
+      <div class="visually-hidden slide">
         <p>Пломбир с помадкой и клубничный щербет</p>
         <img src="img/slide-3.png" width="1079" height="854" alt="Пломбир и щербет">
         <a class="button" href="catalog.html">Давайте оба!</a>
       </div>
       <ul class="buttons">
-        <li class="active"></li>
+        <li class="active">
+        </li>
         <li></li>
         <li></li>
       </ul>
@@ -161,24 +123,28 @@
           <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом">
           <p class="price">310 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочное с апельсиновыи джемом и цитрусовой стружкой</a>
+          <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
         <li>
           <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Мороженое сливочно-кофейное с кусочками шоколада">
           <p class="price">380 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
         <li>
           <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Мороженое сливочно-клубничное с присыпкой">
           <p class="price">355 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
         <li>
           <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Мороженое сливочное с подливкой">
           <p class="price">415 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
@@ -220,14 +186,13 @@
       </p>
       <label class="visually-hidden" for="user-mailing">Электронная почта</label>
       <input class="mailing-icon" type="text" name="user-mailing" placeholder="Электронная почта">
-      <button  type="button">Отправить</button>
+      <button  type="submit">Отправить</button>
       </form>
     </article>
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button class="modal-close" type="button">Закрыть</button>
 
       <div class="contacts">
         <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -244,28 +209,6 @@
         <p> (с 10 до 20 ежедневно)</p>
         <a class="button" href="#">Форма обратной связи</a>
       </div>
-
-      <div class="popup">
-        <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
-          <h2 class="visually-hidden">Обратная связь</h2>
-          <p>
-              <label class="visually-hidden" for="user-name">Как вас зовут?</label>
-              <input class="login-icon-user" type="text" name="user-name" placeholder="Как вас зовут?">
-          </p>
-            
-          <p>
-            <label class="visually-hidden" for="mail">Ваша почта для ответа?</label>
-            <input class="login-icon-password" type="text" name="mail" placeholder="Ваша почта для ответа?">
-          </p>
-          <p>
-              <label class="visually-hidden" for="writing ">Напишите что-нибудь</label>
-              <input class="login-icon-password" type="text" name="writing " placeholder="Напишите что-нибудь...">
-          </p>
-    
-          <a class="button" href="#">Отправить</a>
-        </form>
-      </div>
-
     </section>
   </main>
 
@@ -315,7 +258,29 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a> &#169;2017
       </p>
     </div>
-  </footer>   
+  </footer>
+  
+  <div class="popup">
+    <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p>
+          <label class="visually-hidden" for="user-name">Как вас зовут?</label>
+          <input class="login-icon-user" type="text" name="user-name" placeholder="Как вас зовут?">
+      </p>
+        
+      <p>
+        <label class="visually-hidden" for="mail">Ваша почта для ответа?</label>
+        <input class="login-icon-password" type="text" name="mail" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+          <label class="visually-hidden" for="writing ">Напишите что-нибудь</label>
+          <input class="login-icon-password" type="text" name="writing " placeholder="Напишите что-нибудь...">
+      </p>
+
+      <button class="submit">Отправить</button>
+    </form>
+  </div>
+
 </body>
 
 </html>
