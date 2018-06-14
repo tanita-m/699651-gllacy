@@ -1,0 +1,402 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+   
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height:  22px;
+    font-weight: 700;
+    color: #ffffff;
+    
+
+    background-color: #849d8f;
+}
+    
+
+.visually-hidden {
+    display: none;
+}
+
+a {
+    color: #ffffff; 
+}
+
+.container li,
+.main-navigation li,
+.main-footer li {
+    list-style: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    
+    background-color:  #849d8f;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+    color: #333333;
+
+    background-color: #ffffff;
+}
+
+.catalog,
+.login-form,
+.search-form,
+.popup-form {
+    background-color: #f8f7f4;
+}
+
+.catalog-menu a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #323232;
+    text-decoration: none;
+}
+
+.catalog-menu li:first-child a {
+    font-weight: 700;
+}
+
+.catalog-menu a:hover {
+    background-color: #fbded7;
+    
+}
+
+.catalog-menu a:active {
+    background-color: #f6b5a5;
+}
+
+.site-navigation .active {
+    color: #ffffff;
+
+    background-color: #d07058;
+}
+
+.form-control input {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #323232;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.form-control input:focus {
+    border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.form-control input:hover {
+    border: 2px solid #adadad;  
+}
+
+.smal-button {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
+
+    background-color: #a1b4a9;
+    border: none;
+}
+
+.smal-button:hover {
+    color: #323232;
+
+    background-color: #f8f7f4;
+}
+
+.help a {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #323232;
+}
+
+.cart p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.cart-products{
+    font-size: 13px;
+    line-height: 16px;    
+    font-weight: 400;
+    color: #323232;
+    background-color: #f8f7f4;  
+}
+
+.cart-products span {
+    opacity: 0.4;
+}
+
+.cart-products p {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.working-hours {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.phone-number {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/*  main class="container"*/
+
+.slide {
+    text-align: center;
+}
+
+.slide p {
+    font-size: 60px;
+    line-height:  60.35px;   
+}
+
+.slide a {
+    font-size: 32px;
+    line-height: 44px;  
+}
+
+.button {
+    font: inherit;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    background-image: linear-gradient(90deg, #e74a35, #f26843);
+}
+
+.free-raspberry {
+    background-image: url("../img/raspberries.jpg");
+    background-repeat: no-repeat;
+}
+
+.free-chocolate{
+    background-image: url("../img/chocolate.jpg");
+    background-repeat: no-repeat;
+}
+
+.free-raspberry h2,
+.free-chocolate h2,
+.container h2 {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.free p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* catalog, hit */
+
+.price {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.price span {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.description {
+    font-weight: 500;
+}
+
+.description:hover,
+.description:active,
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+    color: #ffbc9e;
+}
+
+.catalog-list li:hover {
+    background-color: rgba(155, 175, 163, 0.4);
+
+}
+
+.shop {
+    background-image: url("../img/waffle.jpg");
+    color: #333333;
+    font-weight: 400;
+}
+
+.shop h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500; 
+}
+
+.new-blog {
+    background-image: url("../img/strawberry.jpg");
+    background-repeat: no-repeat;
+    color: #323232;
+}
+
+.new-blog a {
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+
+.mailing {
+    background-image: url("../img/postbox.svg");
+    background-repeat: no-repeat;
+    background-color: #f8f7f4;
+}
+
+.mailing p {
+    color: #5a5a5a;
+    font-weight: 400;
+}
+
+.contacts {
+    background-color: #fbfbfb;
+}
+ .contacts p {
+    color: #323232;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    }
+
+.contacts .contacts-bold {
+    font-size: 18px;
+    line-height: 24px;
+ }
+
+ /* footer */
+
+ .footer-social a {
+    text-decoration: none;
+    color: #e6ebe9;
+ }
+ 
+ .links ul{
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+ .links li:first-child a {
+    font-weight: 700;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.popup h4 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #323232;
+}
+
+/* filters */
+
+.filters {
+    list-style: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.ffilter-input:disabled + label {
+    opacity: 0.4;
+}
+
+
+.filters fieldset {
+    border: none;
+}
+
+.heading {
+    font-weight: 500;
+}
+
+.sort {
+    color: #ffffff;
+
+    background-color: #a9b9af;
+}
+
+.sort:hover {
+    color: #323232;
+}
+
+.fond {
+    background-color: #a9b9af;
+}
+
+.filler-button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+
+    background-color: #9cb0a4;
+    border: 2px solid #ffffff;
+}
+
+.filler-button:hover {
+    color: #323232;
+
+    background-color: #ffffff;
+}
+
+/* .filler-button:active {
+    box-shadow: 
+} */
+
+/* main catalog */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs li,
+.heading {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    background-color: #9db1a5;
+}
+
+.current a,
+.current a:hover,
+.current a:focus,
+.current a:active {
+    color: #323232;
+
+    background-color: #ffffff;
+}
