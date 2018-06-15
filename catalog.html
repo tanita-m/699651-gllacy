@@ -22,8 +22,8 @@
           <a href="catalog.html">Каталог</a>
           </div>
           <ul class="catalog catalog-menu">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a  class="new" href="#">Новинки</a></li>
+              <li><a  class="active" href="catalog.html">Сливочное</a></li>
               <li><a href="catalog/shcherbet.html">Щербеты </a></li>
               <li><a href="catalog/led.html">Фруктовый лед</a></li>
               <li><a href="catalog/melorin">Мелорин</a></li>
@@ -49,7 +49,7 @@
         </li>
                 
         <li class="login-link">
-          <button class="smal-button" type="button">Вход</button>
+          <button class="small-button" type="button">Вход</button>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="form-control">
                 <label class="visually-hidden" for="user-mail">Электронная почта</label>
@@ -70,7 +70,7 @@
           </li>
 
         <li class="cart">
-          <button class="visually-hidden smal-button" type="button">Корзина</button>
+          <button class="visually-hidden small-button" type="button">Корзина</button>
           <p>2 товара</p>
           <div class="cart cart-products">
             <table>
@@ -134,7 +134,7 @@
         <a href="#">Каталог</a>
       </li>
       <li class="current">
-        <a>Сливочное</a>
+        <a class="active">Сливочное</a>
       </li>
     </ul>
 
@@ -315,25 +315,33 @@
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
         <li>
+          <span class="visually-hidden">
           <a class="social-button" href="#" aria-label="Twitter">Twitter</a>
+          </span>
         </li>
         <li>
+          <span class="visually-hidden">
           <a class="social-button" href="#" aria-label="Instagram">Instagram</a>
+          </span>
         </li>
         <li>
+          <span class="visually-hidden">
           <a class="social-button" href="#" aria-label="Facebook">Facebook</a>
+          </span>
         </li>
         <li>
+          <span class="visually-hidden">
           <a class="social-button" href="#" aria-label="ВКонтакте">ВКонтакте</a>
-        </li>
+          </span>
+          </li>
         </ul>
     </div>
     <h2 class="visually-hidden">Документация</h2>
     <div class="links">
       <ul>
         <li>
-          <a href="#">
-            <b>Для поставщиков</b>
+          <a class="provider" href="#">
+            Для поставщиков
           </a>
         </li>
         <li>
