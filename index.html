@@ -12,6 +12,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <div class="container">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип">
       </a>
@@ -59,8 +61,8 @@
                 <input type="password" name="password" id="user-password" placeholder="Пароль">
               </p>
 
+              <div class="help"> 
               <button class="button" type="submit">Войти</button>
-              <div class="help">
                 <a href="#">Забыли пароль?</a><br>
                 <a href="#">Новая регистрация</a>
               </div>
@@ -72,33 +74,38 @@
           <p>Пусто</p>
         </li>
       </ul>
+      </div>
 
-      <ul class="working-hours">
-        <li>С 10 до 20, ежедневно</li>
+      <div class="working-hours-phone-wrapper">
+      <div class="container">
+      <ul>
+        <li class="working-hours">С 10 до 20, ежедневно</li>
+        <li class="phone-number">8 812 450-25-25</li>
       </ul>
-      <ul class="phone-number">
-        <li>8 812 450-25-25</li>
-      </ul>
+      </div>
+      </div>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="slide-container">
+    <div class="container">
     <h1 class="visually-hidden">Интерннет магазин мороженого "Глэйси"</h1>
     <section class="slider">
       <h2 class="visually-hidden">Виды мороженого</h2>
       <div class="slide">
-        <p>Крем-брюле и пломбир с малиновым джемом</p>
         <img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир">
+        <p>Крем-брюле и пломбир с малиновым джемом</p>
         <a class="button button-big" href="catalog.html">Давайте оба!</a>
       </div>
       <div class="visually-hidden slide">
-        <p>Шоколадный пломбир и лимонный сорбет</p>
         <img src="img/slide-2.png" width="1065" height="859" alt="Пломбир и сорбет">
+        <p>Шоколадный пломбир и лимонный сорбет</p>
         <a class="button button-big" href="catalog.html">Давайте оба!</a>
       </div>
       <div class="visually-hidden slide">
-        <p>Пломбир с помадкой и клубничный щербет</p>
         <img src="img/slide-3.png" width="1079" height="854" alt="Пломбир и щербет">
+        <p>Пломбир с помадкой и клубничный щербет</p>
         <a class="button button-big" href="catalog.html">Давайте оба!</a>
       </div>
       <ul class="buttons-slide">
@@ -116,7 +123,7 @@
 
     <section class="free">
       <h2 class="visually-hidden">Даром</h2>
-      <ul>
+      <ul class="free-list">
       <li class="free free-raspberry">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -130,31 +137,31 @@
       </ul>
     </section>
 
-    <section class="hit">
+    <section class="catalog-ice-cream">
       <h2 class="visually-hidden">Хит</h2>
       <ul class="catalog-list">
-        <li>
+        <li class="catalog-item">
           <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом">
           <p class="price">310 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочное с апельсиновыи джемом и цитрусовой стружкой</a>
           <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
-        <li>
+        <li class="catalog-item">
           <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Мороженое сливочно-кофейное с кусочками шоколада">
           <p class="price">380 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочно-кофейное с кусочками шоколада</a>
           <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
-        <li>
+        <li class="catalog-item">
           <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Мороженое сливочно-клубничное с присыпкой">
           <p class="price">355 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
-        <li>
+        <li class="catalog-item">
           <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Мороженое сливочное с подливкой">
           <p class="price">415 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -164,6 +171,7 @@
     </section>
 
     <section class="shop">
+      <div class="shop-wrapper">
       <h3>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h3>
       <ul>
         <li>
@@ -183,8 +191,10 @@
           и позволяет сохранить превосходный вкус.
         </li>
       </ul>
+      </div>
     </section>
 
+    <div class="article-wrapper">
     <article class="new-blog">
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки щербетов к столу</a>
@@ -204,11 +214,15 @@
       <button  class="button" type="submit">Отправить</button>
       </form>
     </article>
+    </div>
+    </div>
 
     <section class="map">
+      <div class="map-wrapper">
       <h2 class="visually-hidden">Карта</h2>
       <img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-
+      </div>
+      <div class="container">
       <div class="contacts">
         <p>Адрес главного офиса и офлайн-магазина:</p>
 
@@ -223,10 +237,13 @@
         <p> (с 10 до 20 ежедневно)</p>
         <a class="button" href="#">Форма обратной связи</a>
       </div>
+      </div>
     </section>
+    
   </main>
 
   <footer class="main-footer">
+    <div class="container">
     <div class="footer-social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul>
