@@ -11,70 +11,71 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <div class="container">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип">
-      </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="catalog.html">Каталог</a>
-          <ul class="catalog catalog-menu">
-              <li><a class="new" href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="catalog/shcherbet.html">Щербеты </a></li>
-              <li><a href="catalog/led.html">Фруктовый лед</a></li>
-              <li><a href="catalog/melorin">Мелорин</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="#">О компании</a>
-        </li>
-      </ul>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип">
+        </a>
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul class="catalog catalog-menu">
+                <li><a class="new" href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="catalog/shcherbet.html">Щербеты </a></li>
+                <li><a href="catalog/led.html">Фруктовый лед</a></li>
+                <li><a href="catalog/melorin">Мелорин</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+        </ul>
 
-      <ul class="user-navigation">
+        <ul class="user-navigation">
 
-        <li class="search">
-          <button class="visually-hidden small-button" type="submit">Поиск</button>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="form-control">
-            <label class="visually-hidden" for="search">Что ищем?</label>
-            <input type="text" name="search" id="search" placeholder="Что ищем?">
-          </p>
-          </form>
-        </li>
-                
-        <li class="login-link">
-          <button class="small-button" type="button">Вход</button>
-           <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="form-control">
-                <label class="visually-hidden" for="user-mail">Электронная почта</label>
-                <input type="text" name="user-mail" id="user-mail" placeholder="Электронная почта">
-              </p>
-              
-              <p class="form-control">
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input type="password" name="password" id="user-password" placeholder="Пароль">
-              </p>
-
-              <div class="help"> 
-              <button class="button" type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a><br>
-                <a href="#">Новая регистрация</a>
-              </div>
+          <li class="search">
+            <button class="visually-hidden small-button" type="submit">Поиск</button>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="form-control">
+              <label class="visually-hidden" for="search">Что ищем?</label>
+              <input type="text" name="search" id="search" placeholder="Что ищем?">
+            </p>
             </form>
-        </li>
+          </li>
+                  
+          <li class="login-link">
+            <button class="small-button" type="button">Вход</button>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                <p class="form-control">
+                  <label class="visually-hidden" for="user-mail">Электронная почта</label>
+                  <input type="text" name="user-mail" id="user-mail" placeholder="Электронная почта">
+                </p>
+                
+                <p class="form-control">
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input type="password" name="password" id="user-password" placeholder="Пароль">
+                </p>
 
-        <li class="cart">
-          <button class="visually-hidden small-button" type="button">Корзина</button>
-          <p>Пусто</p>
-        </li>
-      </ul>
-      </div>
+                <div class="help"> 
+                <button class="button" type="submit">Войти</button>
+                  <a href="#">Забыли пароль?</a><br>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+          </li>
+
+          <li class="cart">
+            <button class="visually-hidden small-button" type="button">Корзина</button>
+            <p>Пусто</p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
 
       <div class="working-hours-phone-wrapper">
       <div class="container">
@@ -84,8 +85,6 @@
       </ul>
       </div>
       </div>
-      </div>
-    </nav>
   </header>
 
   <main class="slide-container">
@@ -195,25 +194,25 @@
     </section>
 
     <div class="article-wrapper">
-    <article class="new-blog">
-      <p>Новое в нашем блоге</p>
-      <a href="#">10 способов сервировки щербетов к столу</a>
-    </article>
+      <article class="new-blog">
+        <h5>Новое в нашем блоге</h5>
+        <a href="#">10 способов сервировки щербетов к столу</a>
+      </article>
 
-    <article class="mailing">
-      <form class="mailing-form" action="https://echo.htmlacademy.ru" method="POST">
-      <h2 class="visually-hidden">Рассылка</h2>
-      <p>
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
-        и не слать всякой ненужной ерунды. Честно =)
-      </p>
-      <p class="form-control">
-      <label class="visually-hidden" for="user-mailing">Электронная почта</label>
-      <input type="text" name="user-mailing" id="user-mailing" placeholder="Электронная почта">
-      </p>
-      <button  class="button" type="submit">Отправить</button>
-      </form>
-    </article>
+      <article class="mailing">
+        <form class="mailing-form" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
+          и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <p class="form-control">
+        <label class="visually-hidden" for="user-mailing">Электронная почта</label>
+        <input type="text" name="user-mailing" id="user-mailing" placeholder="Электронная почта">
+        </p>
+        <button  class="button" type="submit">Отправить</button>
+        </form>
+      </article>
     </div>
     </div>
 
@@ -296,6 +295,7 @@
         Сделано в
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a> &#169;2017
       </p>
+    </div>
     </div>
   </footer>
   

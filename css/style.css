@@ -42,21 +42,18 @@ a {
 
 .main-navigation {
     display: flex;
-}
-
-.main-navigation-wrapper .container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-   align-content: center;
-
+    flex-wrap: wrap;
+    align-content: center;
+    
 }
-
 
 .main-header-logo {
     width: 154px;
     height: 64px;
+    margin: 0;
     margin-top: 10px;
+    
 }
 
 .site-navigation {
@@ -64,6 +61,7 @@ a {
     padding: 0;
     width: 685px;
     margin-top: 10px;
+    
    
 }
 
@@ -72,6 +70,7 @@ a {
     padding: 0;
     width: 267px;
     margin-top: 10px;
+    
 }
 
 .working-hours-phone-wrapper .container {
@@ -84,6 +83,10 @@ a {
     margin: 0px;
     padding: 0px;
     width: 267px;
+}
+
+.container-wrapper {
+    margin-top: -60px;
 }
  
 .form-control input::placeholder,
@@ -244,11 +247,16 @@ a {
 .working-hours {
     font-size: 14px;
     line-height: 16px;
+
+    list-style: none;
+
 }
 
 .phone-number {
     font-size: 22px;
     line-height: 24px;
+
+    list-style: none;
 }
 
 /*  main class="container"*/
@@ -338,14 +346,14 @@ a {
     background-image: url("../img/raspberries.jpg");
     background-repeat: no-repeat;
     width: 560px;
-    height: 229px;
+    min-height: 229px;
 }
 
 .free-chocolate {
     background-image: url("../img/chocolate.jpg");
     background-repeat: no-repeat;
     width: 560px;
-    height: 229px;
+    min-height: 229px;
 }
 
 .free-raspberry h2,
@@ -451,6 +459,14 @@ a {
     color: #323232;
 
     width: 560px;
+}
+
+.new-blog h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #323232;
+
 }
 
 .new-blog a {
