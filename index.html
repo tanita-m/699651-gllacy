@@ -31,14 +31,16 @@
             <a href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#">О Компании</a>
           </li>
         </ul>
 
         <ul class="user-navigation">
 
           <li class="search">
-            <button class="visually-hidden small-button" type="submit">Поиск</button>
+            <button class="small-button" type="submit">
+              <span class="visually-hidden">Поиск</span>
+            </button>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="form-control">
               <label class="visually-hidden" for="search">Что ищем?</label>
@@ -69,22 +71,19 @@
           </li>
 
           <li class="cart">
-            <button class="visually-hidden small-button" type="button">Корзина</button>
-            <p>Пусто</p>
+            <button class="small-button" type="button">
+              Пусто
+            </button>
           </li>
         </ul>
       </nav>
-    </div>
-  
-
-      <div class="working-hours-phone-wrapper">
-      <div class="container">
-      <ul>
+ 
+      <ul class="working-hours-phone">
         <li class="working-hours">С 10 до 20, ежедневно</li>
         <li class="phone-number">8 812 450-25-25</li>
       </ul>
       </div>
-      </div>
+      
   </header>
 
   <main class="slide-container">
@@ -109,13 +108,13 @@
       </div>
       <ul class="buttons-slide">
         <li class="active-btn">
-          <!-- <button type="button"></button> -->
+          <button type="button" class="visually-hidden"></button>
         </li>
         <li class="active-btn">
-            <!-- <button type="button"></button> -->
+            <button type="button" class="visually-hidden"></button>
         </li>
         <li class="active-btn">
-            <!-- <button type="button"></button> -->
+            <button type="button" class="visually-hidden"></button>
         </li>
       </ul>
     </section>
@@ -126,7 +125,7 @@
       <li class="free free-raspberry">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="button" href="catalog/malinka.html">Хочу варенья!</a>
+        <a class="button" href="catalog/malinka.html">Хочу вареньe!</a>
       </li>
       <li class="free free-chocolate">
         <h2>Шоколадки даром!</h2>
@@ -139,28 +138,28 @@
     <section class="catalog-ice-cream">
       <h2 class="visually-hidden">Хит</h2>
       <ul class="catalog-list">
-        <li class="catalog-item">
+        <li class="catalog-item catalog-hit">
           <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом">
           <p class="price">310 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочное с апельсиновыи джемом и цитрусовой стружкой</a>
           <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
-        <li class="catalog-item">
+        <li class="catalog-item catalog-hit">
           <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Мороженое сливочно-кофейное с кусочками шоколада">
           <p class="price">380 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочно-кофейное с кусочками шоколада</a>
           <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
-        <li class="catalog-item">
+        <li class="catalog-item catalog-hit">
           <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Мороженое сливочно-клубничное с присыпкой">
           <p class="price">355 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="visually-hidden button quick-view" href="#">Быстрый просмотр</a>
         </li>
 
-        <li class="catalog-item">
+        <li class="catalog-item catalog-hit">
           <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Мороженое сливочное с подливкой">
           <p class="price">415 &#8381;<span>/кг</span></p>
           <a class="description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -173,19 +172,19 @@
       <div class="shop-wrapper">
       <h3>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h3>
       <ul>
-        <li>
+        <li class="ice-cream-icon">
           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
           временем технологий.
         </li>
-        <li>
+        <li class="leaf-icon">
           Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
           и добавки произведены из натурального, экологически чистого сырья.
         </li>
-        <li>
+        <li class="cow-icon">
           Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
           сотрудничество.
         </li>
-        <li>
+        <li class="thermometer">
           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути
           и позволяет сохранить превосходный вкус.
         </li>
