@@ -40,8 +40,6 @@ img {
     height: auto;
 }
 
-
-
 .site-wrapper {
     min-width: 940px;
     background-color: #849d8f;
@@ -51,8 +49,7 @@ img {
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
+.site-wrapper::before, .site-wrapper::after {
     content: "";
     visibility: hidden;
 }
@@ -70,7 +67,7 @@ img {
 .container {
     width: 1146px;
     margin: 0 auto;
-    padding: 0 27px;
+    padding: 0 27px;    
 }
 
 .main-navigation {
@@ -113,9 +110,8 @@ img {
 .site-navigation a {
     display: block;
     padding: 8px 13px;
-    margin-top: 22px;    
+    margin-top: 22px;
 }
-
 
 .user-navigation li {
     display: block;
@@ -174,9 +170,9 @@ img {
 
 .button {
     display: inline-block;
-    padding: 12px 44px;
+    padding: 12px 40px;
     font-weight: 600;
-    font-size: 31px;
+    font-size: 32px;
     line-height: 41px;
     text-align: center;
     color: #ffffff;
@@ -252,7 +248,7 @@ img {
     background-position: center;
     width: 32px;
     height: 32px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 .search button:hover {
@@ -263,7 +259,7 @@ img {
     background-position: center;
     width: 32px;
     height: 32px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 .user-navigation .login-link, .user-navigation .cart {
@@ -275,7 +271,7 @@ img {
     height: 30px;
     padding: 0;
     padding-right: 17px;
-    border-radius: 30px;        
+    border-radius: 30px;
 }
 
 .cart button {
@@ -311,6 +307,7 @@ img {
     width: 21px;
     height: 21px;
 }
+
 .cart button:hover::before {
     content: "";
     position: absolute;
@@ -337,8 +334,7 @@ img {
     line-height: 18px;
 }
 
-.site-navigation a:hover, 
-.user-navigation a:hover {
+.site-navigation a:hover, .user-navigation a:hover {
     color: #333333;
     background-color: #ffffff;
 }
@@ -465,13 +461,13 @@ img {
 .free-raspberry .button {
     width: 150px;
     margin-left: auto;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 .free-chocolate .button {
     width: 171px;
     margin-left: auto;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 .free-list {
@@ -485,9 +481,8 @@ img {
 .free li {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 520px;
-    min-height: 187px;
+    min-height: 190px;
     border-radius: 15px;
     padding: 20px;
 }
@@ -516,8 +511,7 @@ img {
     font-size: 18px;
     line-height: 22px;
     padding: 0;
-    padding-top: 8px;
-    margin: 0;
+    margin-top: 20px;
 }
 
 .free-raspberry a, .free-chocolate a {
@@ -536,7 +530,7 @@ img {
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
     margin: 0;
     margin-right: auto;
-    margin-top: -55px;
+    margin-top: -57px;
 }
 
 .price span {
@@ -547,7 +541,7 @@ img {
 .description {
     font-weight: 500;
     margin: 0;
-    margin-top: 22px;
+    margin-top: 21px;
 }
 
 .description:hover, .description:active, .breadcrumbs a:hover, .breadcrumbs a:active {
@@ -564,13 +558,17 @@ img {
 background-color: rgba(155, 175, 163, 0.4);
 } */
 
+.catalog-ice-cream {
+    margin: 0;
+    margin-bottom: 37px;
+}
+
 .catalog-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    margin-bottom: 33px;
 }
 
 .catalog-item {
@@ -586,7 +584,7 @@ background-color: rgba(155, 175, 163, 0.4);
 .quick-view {
     position: absolute;
     height: 405px;
-    background-color: rgba(155, 175, 163, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding: 0;
     display: none;
@@ -597,15 +595,14 @@ background-color: rgba(155, 175, 163, 0.4);
     position: absolute;
     top: -4px;
     left: -12px;
-    z-index: 999;
     width: 293px;
 }
 
 .catalog-hit::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: -1;
+    top: 0;
+    left: 0;
     background: url("../img/hit.svg") no-repeat;
     width: 62px;
     height: 62px;
@@ -628,20 +625,19 @@ background-color: rgba(155, 175, 163, 0.4);
     display: flex;
     flex-direction: column;
     position: relative;
-    margin:0;
-    margin-bottom: 40px;
-    padding:0;    
+    margin: 0;
+    padding: 0;
     /* padding: 0px 10px; */
     width: 100%;
     min-height: 305px;
 }
-
 
 .shop {
     background-image: url("../img/waffle.jpg");
     color: #333333;
     font-weight: 400;
     border-radius: 15px;
+    margin-bottom: 41px;
 }
 
 .shop h3 {
@@ -650,15 +646,15 @@ background-color: rgba(155, 175, 163, 0.4);
     font-weight: 500;
     /* padding-left: 10px;
     padding-top: 22px; */
-    margin: 30px 0 0 20px;
+    margin: 26px 0 0 20px;
 }
 
 .shop-icon {
     display: flex;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     /* margin: 18px 0; */
 }
 
@@ -721,12 +717,13 @@ background-color: rgba(155, 175, 163, 0.4);
 .new-blog {
     background-image: url("../img/strawberry.jpg");
     background-repeat: no-repeat;
-    background-position: 17% 40%;
+    background-position: -52px -224px;
     color: #323232;
-    width: 49%;
+    width: 560px;
     height: 220px;
     border-radius: 15px;
-    padding: 0px;
+    padding: 23px 240px 20px 18px;
+    box-sizing: border-box;
 }
 
 .new-blog h5 {
@@ -735,13 +732,14 @@ background-color: rgba(155, 175, 163, 0.4);
     font-weight: 500;
     color: #323232;
     margin: 0;
-    padding: 24px 19px;
 }
 
 .new-blog a {
+    display: block;
     font-size: 24px;
     line-height: 30px;
     color: #323232;
+    padding-top: 3px;
 }
 
 .mailing {
@@ -751,17 +749,17 @@ background-color: rgba(155, 175, 163, 0.4);
 
 .mailing-fon {
     background-color: #f8f7f4;
-    width: 505px;
+    width: 507px;
     height: 185px;
     margin: 6px;
-    padding: 12px 22px;
+    padding: 12px 20px;
     border-radius: 15px;
 }
 
 .mailing p {
     color: #5a5a5a;
     font-weight: 400;
-    margin-bottom: 31px;
+    margin-bottom: 37px;
 }
 
 .form-control-mailing {
@@ -770,18 +768,25 @@ background-color: rgba(155, 175, 163, 0.4);
 }
 
 .form-control-mailing input {
-    width: 340px;
-    padding: 12px;
+    width: 352px;
+    height: 40px;
+    padding-left: 14px;
+    border-radius: 4px;
 }
 
 .form-control-mailing button {
-    width: 126px;
+    width: 127px;
+    margin-top: -2px;
+}
+
+.map {
+    min-height: 450px;
 }
 
 .map-wrapper img {
     width: 100%;
     margin-bottom: -373px;
-    height: 429px;
+    min-height: 429px;
 }
 
 .map .container {
@@ -791,11 +796,12 @@ background-color: rgba(155, 175, 163, 0.4);
 
 .contacts {
     width: 250px;
-    height: 278px;
+    height: 255px;
     background-color: #fbfbfb;
     border-radius: 15px;
     margin: 0px;
-    padding: 13px 27px;
+    margin-top: -23px;
+    padding: 25px 27px;
 }
 
 .contacts p {
@@ -803,7 +809,11 @@ background-color: rgba(155, 175, 163, 0.4);
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    margin-bottom: 4px;
+    margin: 0;
+}
+
+.contacts .contacts-title {
+    margin-top: 3px;
 }
 
 .contacts .contacts-bold {
@@ -814,15 +824,30 @@ background-color: rgba(155, 175, 163, 0.4);
     margin: 0;
 }
 
+.contacts .contacts-address {
+    margin-top: 2px;
+}
+
+.contacts .contacts-subtitle {
+    margin-top: 17px;
+}
+
+.contacts .contacts-tel {
+    margin-top: 5px;
+}
+
+
 .button-contacts {
     width: 232px;
-    margin-top: 8px;
+    margin-top: 26px;
 }
 
 /* footer */
 
 .main-footer .container {
-    margin-top: 80px;
+    margin: 0 auto;
+    padding: 0 27px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -830,8 +855,9 @@ background-color: rgba(155, 175, 163, 0.4);
 .footer-social ul {
     display: flex;
     justify-content: space-between;
-    width: 190px;
+    width: 188px;
     padding: 0;
+    margin: 0;
 }
 
 .social-button {
@@ -851,25 +877,35 @@ background-color: rgba(155, 175, 163, 0.4);
     width: 380px;
 }
 
-.links ul {
+.documents {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 306px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
+    margin-top: 9px;
 }
 
-.links .provider {
+.documents li {
+    min-width: 120px;
+    margin-top: 5px;
+}
+
+.documents li:nth-of-type(2n) {
+    margin-left: 21px;
+}
+
+.documents .provider {
+    position: relative;
     font-weight: 700;
 }
 
 .provider::before {
     content: "";
     position: absolute;
-    top: 19px;
-    left: 15px;
+    top: 6px;
+    left: -23px;
     background: url(../img/heart.svg) no-repeat;
     width: 18px;
     height: 15px;
