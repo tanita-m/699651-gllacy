@@ -90,7 +90,7 @@ img {
     height: 64px;
     margin: 0;
     margin-top: 10px;
-    padding-right: 23px;
+    margin-right: 12px;
 }
 
 .site-navigation {
@@ -98,35 +98,36 @@ img {
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 450px;
 }
 
 .user-navigation {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    width: auto;
+    /* margin: 0;
+    padding: 0; */
+    width: 246px;
     margin-left: auto;
 }
 
 .site-navigation a {
     display: block;
-    margin: 31px 22px 29px 0px;
-    padding: 2px;
+    padding: 8px 13px;
+    margin-top: 22px;    
 }
+
 
 .user-navigation li {
     display: block;
-    padding: 15px 0;
-    padding-left: 10px;
+    /* padding: 15px 0; */
+    margin-right: 10px;
 }
 
 .working-hours-phone {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: -5px 0;
+    margin: 0;
     padding: 0;
     width: 250px;
     margin-left: auto;
@@ -160,7 +161,7 @@ img {
 
 .slide-title {
     width: 700px;
-    margin: -41px auto;
+    margin: -45px auto;
     margin-bottom: 27px;
     font-size: 60px;
     line-height: 60px;
@@ -284,8 +285,8 @@ img {
 .login-link button::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 28px;
+    top: 9px;
+    left: 18px;
     background: url("../img/entry.svg") no-repeat;
     width: 21px;
     height: 21px;
@@ -294,8 +295,8 @@ img {
 .login-link button:hover::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 28px;
+    top: 9px;
+    left: 18px;
     background: url("../img/entry-hover.svg") no-repeat;
     width: 21px;
     height: 21px;
@@ -304,8 +305,8 @@ img {
 .cart button::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 27px;
+    top: 9px;
+    left: 16px;
     background: url("../img/cart.svg") no-repeat;
     width: 21px;
     height: 21px;
@@ -313,8 +314,8 @@ img {
 .cart button:hover::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 27px;
+    top: 9px;
+    left: 16px;
     background: url("../img/cart-hover.svg") no-repeat;
     width: 21px;
     height: 21px;
@@ -342,11 +343,14 @@ img {
     background-color: #ffffff;
 }
 
-/* .site-navigation a:hover {
-    padding: 10px;
-    margin: 24px -11px;
-    border-radius: 30px;
-} */
+.site-navigation a:hover {
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.site-navigation a:hover:active {
+    box-shadow: inset 0px 2px 1px 0px #696969;
+}
 
 .catalog, .login-form, .search-form, .popup-form {
     background-color: #f8f7f4;
@@ -566,7 +570,7 @@ background-color: rgba(155, 175, 163, 0.4);
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
 }
 
 .catalog-item {
@@ -623,17 +627,15 @@ background-color: rgba(155, 175, 163, 0.4);
 .shop-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     position: relative;
+    margin:0;
     margin-bottom: 40px;
-    padding: 0px 10px;
-    width: calc(100% - 20px);
-    height: 305px;
+    padding:0;    
+    /* padding: 0px 10px; */
+    width: 100%;
+    min-height: 305px;
 }
 
-.shop-wrapper h3 {
-    flex-grow: 1;
-}
 
 .shop {
     background-image: url("../img/waffle.jpg");
@@ -646,42 +648,32 @@ background-color: rgba(155, 175, 163, 0.4);
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
-    padding-left: 10px;
-    padding-top: 22px;
-    margin: 0;
+    /* padding-left: 10px;
+    padding-top: 22px; */
+    margin: 30px 0 0 20px;
 }
 
 .shop-icon {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-grow: 3;
+    flex-wrap: wrap;        
     list-style: none;
     padding: 0;
-    margin: 18px 0;
+    margin:0;
+    /* margin: 18px 0; */
 }
 
 .shop-icon li {
-    width: 432px;
-}
-
-.ice-cream-icon {
-    order: -4;
-}
-
-.leaf-icon {
-    order: -2;
-}
-
-.cow-icon {
-    order: -3;
+    width: 488px;
+    position: relative;
+    padding-left: 64px;
+    margin: 21px 0 0 12px;
 }
 
 .ice-cream-icon::before {
     content: "";
     position: absolute;
-    top: 91px;
-    left: 19px;
+    top: -14px;
+    left: 9px;
     background: url(../img/ice-cream-icon.svg) no-repeat;
     width: 50px;
     height: 50px;
@@ -690,8 +682,8 @@ background-color: rgba(155, 175, 163, 0.4);
 .leaf-icon::before {
     content: "";
     position: absolute;
-    top: 179px;
-    left: 19px;
+    top: -14px;
+    left: 9px;
     background: url(../img/leaf-icon.svg) no-repeat;
     width: 50px;
     height: 50px;
@@ -700,8 +692,8 @@ background-color: rgba(155, 175, 163, 0.4);
 .cow-icon::before {
     content: "";
     position: absolute;
-    top: 91px;
-    left: 583px;
+    top: -14px;
+    left: 9px;
     background: url(../img/cow-icon.svg) no-repeat;
     width: 50px;
     height: 50px;
@@ -710,8 +702,8 @@ background-color: rgba(155, 175, 163, 0.4);
 .thermometer::before {
     content: "";
     position: absolute;
-    top: 179px;
-    left: 583px;
+    top: -13px;
+    left: 9px;
     background: url(../img/thermo.svg) no-repeat;
     width: 50px;
     height: 50px;
