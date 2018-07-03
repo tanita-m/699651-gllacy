@@ -664,7 +664,7 @@ img {
     top: -4px;
     left: -12px;
     width: 293px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .catalog-hit {
