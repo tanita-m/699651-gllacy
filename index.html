@@ -67,9 +67,11 @@
                   </p>
 
                   <div class="help"> 
-                  <button class="button" type="submit">Войти</button>
-                    <a href="#">Забыли пароль?</a><br>
+                  <button class="button button-help" type="submit">Войти</button>
+                    <div class="help-wrapper">
+                    <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
+                    </div>
                   </div>
                 </form>
             </li>
@@ -344,20 +346,20 @@
     <div class="popup">
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
         <h4>Мы обязательно вам ответим!</h4>
-        <p class="form form-control">
+        <p class="form form-control form-control-popup">
           <label class="visually-hidden" for="user-name">Как вас зовут?</label>
-          <input type="text" name="user-name"  id="user-name" placeholder="Как вас зовут?">
+          <input  type="text" name="user-name"  id="user-name" placeholder="Как вас зовут?">
         </p>
           
-        <p class="form form-control">
+        <p class="form form-control form-control-popup">
           <label class="visually-hidden" for="mail">Ваша почта для ответа?</label>
           <input type="text" name="mail" id="mail" placeholder="Ваша почта для ответа?">
         </p>
-        <p class="form form-control">
+        <p class="form form-control form-control-popup">
           <textarea name="writing" id="writing" placeholder="Напишите что-нибудь..."></textarea>
         </p>
 
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button-popup" type="submit">Отправить</button>
       </form>
     </div>
   </div>   

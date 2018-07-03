@@ -8,7 +8,13 @@ html, body {
     color: #ffffff;
 }
 
-.catalog-menu, .form, .help, .popup, .cart .cart-products, .button-cart {
+
+.cart, 
+.cart-products, 
+.button-cart,
+.help, 
+.search
+{
     display: none;
 }
 
@@ -79,6 +85,25 @@ img {
     padding: 0 27px;
 }
 
+.catalog-menu {
+    position: fixed;
+    left: 184px;
+    top: 45px;
+    border-radius: 5px;
+        
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    width: 143px;
+    height: 171px; 
+    margin-left: 20px;
+    padding: 0;  
+}
+
+.catalog-menu li {
+
+}
+
+
+
 .main-navigation {
     display: flex;
     justify-content: flex-start;
@@ -126,6 +151,58 @@ img {
 .user-navigation li {
     display: block;
     margin-left: 10px;
+}
+
+.search-form {
+    position: fixed;
+    top: 45px;
+    left: 602px;
+    width: 323px;
+    height: 55px;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.form-control {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.search-form input {
+    width: 310px;
+    height: 43px;
+}
+
+.login-form {
+    position: fixed;
+    top: 59px;
+    left: 771px;
+
+    width: 237px;
+    height: 194px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.login-form input {
+    width: 240px;
+    height: 45px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.help {
+    display: flex;
+}
+
+.help-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .breadcrumbs {
@@ -329,6 +406,17 @@ img {
     border-radius: 30px;
 }
 
+.help button {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    padding: 5px 9px;
+    width: 100px;
+    height: 45px;
+    margin-right: 18px;
+}
+
+
 .login-link button::before {
     content: "";
     position: absolute;
@@ -429,10 +517,12 @@ img {
     font-weight: 400;
     color: #323232;
     text-decoration: none;
+    margin: 0;
 }
 
 .catalog-menu .new {
-    font-weight: 700;
+    font-weight: 700;    
+    margin: 0;
 }
 
 .catalog-menu a:hover {
@@ -456,6 +546,7 @@ img {
     color: #323232;
     border: 0;
     box-shadow: 0px 0px 0px 1px #b2b2b2;
+    border-radius: 5px;
 }
 
 .form-control input:focus, .form-control textarea:focus, .form-control input:hover:focus, .form-control textarea:hover:focus {
@@ -519,7 +610,7 @@ img {
     text-align: right;
 }
 
-.button-free, .button-quick-view, .button-mailing, .button-contacts {
+.button-free, .button-quick-view, .button-mailing, .button-contacts, .button-popup {
     font-size: 18px;
     line-height: 36px;
     text-align: center;
@@ -1372,4 +1463,54 @@ footer a {
 footer a:hover, footer a:active {
     color: #ffbc9e;
     text-decoration-color: rgba(249, 172, 159, 0.3);
+}
+
+.popup {
+    position: fixed;
+    top: calc(50% - 250px);
+    left: calc(50% - 265px);
+    z-index: 5;
+}
+
+.popup-form {
+    position: relative;
+    border-radius: 10px;
+    width: 450px;
+    height: 480px;
+    padding: 25px;
+}
+
+.popup-form::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 445px;
+    background: url("../img/close.svg") no-repeat;
+    width: 18px;
+    height: 17px;
+}
+
+.popup-form::before:hover,
+.popup-form::before:active {
+    background: url("../img/X-big.svg") no-repeat;
+
+}
+.form-control-popup input {
+    width: 267px;
+    height: 45px;
+    
+    border-radius: 6px;
+    margin-bottom: 20px;      
+}
+
+.form-control-popup textarea {
+    width: 426px;
+    height: 155px;
+    margin-bottom: 26px;
+}
+
+.button-popup {
+    width: 127px;
+    margin-left: 305px;
+
 }
