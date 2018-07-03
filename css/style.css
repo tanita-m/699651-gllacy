@@ -13,7 +13,10 @@ html, body {
 .cart-products, 
 .button-cart,
 .help, 
-.search
+.catalog-menu,
+.search-form,
+.login-form,
+.popup
 {
     display: none;
 }
@@ -85,25 +88,6 @@ img {
     padding: 0 27px;
 }
 
-.catalog-menu {
-    position: fixed;
-    left: 184px;
-    top: 45px;
-    border-radius: 5px;
-        
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    width: 143px;
-    height: 171px; 
-    margin-left: 20px;
-    padding: 0;  
-}
-
-.catalog-menu li {
-
-}
-
-
-
 .main-navigation {
     display: flex;
     justify-content: flex-start;
@@ -132,6 +116,9 @@ img {
     width: 450px;
 }
 
+.site-navigation li {
+    position: relative;
+}
 .user-navigation {
     display: flex;
     align-items: center;
@@ -153,15 +140,18 @@ img {
     margin-left: 10px;
 }
 
+.search {
+    position: relative;
+}
 .search-form {
-    position: fixed;
-    top: 45px;
-    left: 602px;
-    width: 323px;
-    height: 55px;
-    padding: 15px 20px;
+    position: absolute;
+    top: 40px;
+    left: -307px;
+    width: 309px;
+    height: 54px;
+    padding: 15px 16px;
     border-radius: 5px;
-
+    z-index: 10;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -170,31 +160,43 @@ img {
     margin-top: 5px;
 }
 
-.search-form input {
-    width: 310px;
-    height: 43px;
+.form-control.form-control-search input {
+    width: 293px;
+    height: 41px;
+    padding-left: 15px;
 }
 
-.login-form {
-    position: fixed;
-    top: 59px;
-    left: 771px;
+.form-control.form-control-search input::placeholder {
+    font-size: 14px;
+}
 
-    width: 237px;
-    height: 194px;
-    padding: 20px;
+.form-control.form-control-enter input::placeholder {
+    font-size: 14px;
+}
+.login-form {
+    position: absolute;
+    top: 38px;
+    left: -182px;
+
+    width: 257px;
+    height: 197px;
+    padding: 17px 0 0 20px;
     border-radius: 6px;
     background-color: rgb(248, 247, 244);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: 10;
 
 }
 
 .login-form input {
-    width: 240px;
-    height: 45px;
+    width: 225px;
+    height: 38px;
     border-radius: 6px;
     margin-bottom: 20px;
+    padding-left: 13px;
 }
+
+
 
 .help {
     display: flex;
@@ -406,6 +408,12 @@ img {
     border-radius: 30px;
 }
 
+.login-link .help-wrapper a:hover, .login-link .help-wrapper a:active {
+    color: #e84d37;
+    text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
+
 .help button {
     font-size: 18px;
     line-height: 36px;
@@ -417,7 +425,7 @@ img {
 }
 
 
-.login-link button::before {
+.login-link button:not(.button-help)::before {
     content: "";
     position: absolute;
     top: 9px;
@@ -427,7 +435,7 @@ img {
     height: 21px;
 }
 
-.login-link button:hover::before {
+.login-link button:not(.button-help):hover::before {
     content: "";
     position: absolute;
     top: 9px;
@@ -511,6 +519,30 @@ img {
     background-color: #f8f7f4;
 }
 
+.catalog-menu {
+    position: absolute;
+    left: -10px;
+    top: 61px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    min-width: 143px;
+    height: auto;
+    margin:0;
+    padding:0;
+    padding-bottom: 5px;
+}
+
+.catalog-menu li { 
+    height: 28px;   
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+/* .catalog-menu li:first-child {
+    margin-bottom: 30px;
+} */
+
 .catalog-menu a {
     font-size: 14px;
     line-height: 16px;
@@ -518,18 +550,39 @@ img {
     color: #323232;
     text-decoration: none;
     margin: 0;
+    padding: 6px 0 0 20px;
+}
+
+.catalog-menu a:hover {
+    background: transparent;
 }
 
 .catalog-menu .new {
     font-weight: 700;    
     margin: 0;
+    margin-top: 4px;
+    margin-bottom: 10px;
 }
 
-.catalog-menu a:hover {
+.catalog-menu .new::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 5%;
+    height: 1px;
+    opacity: 0.2;
+    width: 90%;
+    background-color: #353535;    
+}
+
+.catalog-menu a:hover:active {
+    box-shadow: none;
+}
+.catalog-menu li:hover {
     background-color: #fbded7;
 }
 
-.catalog-menu a:active {
+.catalog-menu li:active {
     background-color: #f6b5a5;
 }
 
@@ -578,6 +631,7 @@ img {
     line-height: 24px;
     font-weight: 400;
     color: #323232;
+    margin-bottom: -2px;
 }
 
 .cart p {
@@ -1111,6 +1165,9 @@ img {
     line-height: 28px;
     font-weight: 500;
     color: #323232;
+    margin: 0;
+    margin-top: -8px;
+    margin-bottom: 19px;
 }
 
 /* filters */
@@ -1467,28 +1524,30 @@ footer a:hover, footer a:active {
 
 .popup {
     position: fixed;
-    top: calc(50% - 250px);
-    left: calc(50% - 265px);
+    top: 290px;
+    left: calc(50% - 213px);
     z-index: 5;
 }
 
 .popup-form {
     position: relative;
     border-radius: 10px;
-    width: 450px;
-    height: 480px;
+    width: 427px;
+    height: 392px;
     padding: 25px;
 }
 
-.popup-form::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 445px;
+.popup-close-button {
+    width:18px;
+    height:17px;
     background: url("../img/close.svg") no-repeat;
-    width: 18px;
-    height: 17px;
+    position: absolute;    
+    right: 16px;
+    top: 15px;
+    border: none;
+    cursor: pointer;
 }
+
 
 .popup-form::before:hover,
 .popup-form::before:active {
@@ -1496,21 +1555,25 @@ footer a:hover, footer a:active {
 
 }
 .form-control-popup input {
-    width: 267px;
-    height: 45px;
+    width: 252px;
+    height: 41px;
     
     border-radius: 6px;
-    margin-bottom: 20px;      
+    margin-bottom: 16px;  
+    padding-left: 13px;    
 }
 
 .form-control-popup textarea {
-    width: 426px;
-    height: 155px;
-    margin-bottom: 26px;
+    width: 411px;
+    height: 142px;
+    margin-bottom: 20px;
+    padding-left: 13px;
+    padding-top: 8px;
+
 }
 
 .button-popup {
-    width: 127px;
-    margin-left: 305px;
+    width: 139px;
+    margin-left: 289px;
 
 }

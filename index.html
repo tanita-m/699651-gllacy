@@ -7,6 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,400,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <title>HTML Academy: Глейси</title>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,14 +22,14 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип">
           </a>
           <ul class="site-navigation">
-            <li>
+            <li onmouseover="show('catalog-menu')" onmouseout="hide('catalog-menu')">
               <a href="catalog.html">Каталог</a>
-              <ul class="catalog catalog-menu">
-                  <li><a class="new" href="#">Новинки</a></li>
+              <ul id="catalog-menu" class="catalog catalog-menu">
+                  <li class="new"><a href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="catalog/shcherbet.html">Щербеты </a></li>
                   <li><a href="catalog/led.html">Фруктовый лед</a></li>
-                  <li><a href="catalog/melorin">Мелорин</a></li>
+                  <li><a href="catalog/melorin">Мелорин</a></li>                  
               </ul>
             </li>
             <li>
@@ -41,27 +42,27 @@
 
           <ul class="user-navigation">
 
-            <li class="search">
+            <li class="search" onmouseover="show('search-form')" onmouseout="hide('search-form')">
               <button class="small-button" type="submit">
                 <span class="visually-hidden">Поиск</span>
               </button>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="form form-control">
+              <form id="search-form" class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p class="form form-control form-control-search">
                 <label class="visually-hidden" for="search">Что ищем?</label>
                 <input type="text" name="search" id="search" placeholder="Что ищем?">
               </p>
               </form>
             </li>
                     
-            <li class="login-link">
+            <li class="login-link" onmouseover="show('login-form')" onmouseout="hide('login-form')">
               <button id="enter-button" class="small-button" type="button">Вход</button>
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                  <p class="form form-control">
+              <form id="login-form" class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                  <p class="form form-control form-control-enter">
                     <label class="visually-hidden" for="user-mail">Электронная почта</label>
                     <input type="text" name="user-mail" id="user-mail" placeholder="Электронная почта">
                   </p>
                   
-                  <p class="form form-control">
+                  <p class="form form-control form-control-enter">
                     <label class="visually-hidden" for="user-password">Пароль</label>
                     <input type="password" name="password" id="user-password" placeholder="Пароль">
                   </p>
@@ -247,7 +248,7 @@
             </p>
             
             <p class="contacts-working-hours"> (с 10 до 20 ежедневно)</p>
-            <a class="button button-contacts" href="#">Форма обратной связи</a>
+            <a class="button button-contacts" href="#" onclick="show('popup')">Форма обратной связи</a>
           </div>
         </div>
       </section>    
@@ -343,8 +344,9 @@
       </div>
     </footer>
   
-    <div class="popup">
+    <div id="popup" class="popup">      
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+        <button class="popup-close-button" onclick="hide('popup')"></button>
         <h4>Мы обязательно вам ответим!</h4>
         <p class="form form-control form-control-popup">
           <label class="visually-hidden" for="user-name">Как вас зовут?</label>
