@@ -9,11 +9,10 @@ html, body {
 }
 
 
-.cart, 
-.cart-products, 
+.cart-products,
 .button-cart,
 .help, 
-.catalog-menu,
+/* .catalog-menu, */
 .search-form,
 .login-form,
 .popup
@@ -400,7 +399,7 @@ img {
     position: relative;
 }
 
-.login-link button, .cart button {
+button.enter-button, button.cart-button {
     width: 94px;
     height: 30px;
     padding: 0;
@@ -445,37 +444,44 @@ img {
     height: 21px;
 }
 
-.cart button::before {
+button.cart::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 6px;
     left: 16px;
     background: url("../img/cart.svg") no-repeat;
     width: 21px;
     height: 21px;
 }
 
-.cart button:hover::before {
+button.cart:hover::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 6px;
     left: 16px;
     background: url("../img/cart-hover.svg") no-repeat;
     width: 21px;
     height: 21px;
 }
 
-.cart button {
+button.cart  {
     width: 100px;
 }
 
-.cart-full button {
+button.cart-submit {
+    width: 170px;
+    height: 43px;
+    margin-left: 339px;
+    margin-bottom: 3px;
+}
+
+button.cart-full {
     width: 115px;
     color: #323232;
     background-color: #ffffff;
 }
 
-.cart-full .small-button::before {
+button.cart-full::before {
     content: "";
     position: absolute;
     top: 9px;
@@ -585,12 +591,22 @@ img {
 .catalog-menu li:active {
     background-color: #f6b5a5;
 }
+.catalog-menu li.current {    
+    background-color: #d07058;
+}
+
+.catalog-menu li.current a {
+    background-color: transparent;
+    color: #ffffff;
+}
 
 .site-navigation .active, .current .active {
     color: #ffffff;
     background-color: #d07058;
     border-radius: 25px;
 }
+
+
 
 .form-control input, .form-control textarea {
     font-size: 16px;
@@ -641,9 +657,9 @@ img {
     color: #ffffff;
 }
 
-.cart-products {
-    width: 539px;
-    height: 242px;
+.cart .cart-products {
+    width: 508px;
+    height: auto;
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
@@ -651,10 +667,77 @@ img {
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 19px 16px;
+    position: absolute;
+    top: 38px;
+    left: -424px;
+    z-index: 10;
+    
 }
 
+button.delete-product {
+    content: "";
+    position: relative;
+    top:2px;
+    left:0;
+    width:13px;
+    height:13px;
+    border:none;
+    background: url("../img/x-small.svg") no-repeat;    
+    padding:0;
+    margin:0;   
+}
+.cart-table {
+    border-collapse: collapse;    
+}
+.cart-table td {
+    padding:0;        
+}
+
+.cart-table tr {
+        
+}
+.cart-delete {
+    width:23px;
+    height:23px;
+}
+
+.cart-photo {
+    height: 32px;
+    width: 32px;
+}
+td.cart-description {
+    width:229px;
+    padding: 0 10px 0 17px;
+}
+
+td.cart-quantity {
+    padding: 0 8px;
+    width:100px;
+}
+
+td.spacer {
+    height:18px;
+}
+
+.cart-products hr {
+    margin-top: 21px;
+    border:0;
+    height:1px;
+    background-color: #cacac7;
+}
+
+td.cart-total {
+    width:auto;
+    padding: 0 14px;
+}
 .cart-products span {
-    opacity: 0.2;
+    color: #999999;
+}
+
+p.cart-total {
+    color:#323232;
+    margin-bottom: 13px;
 }
 
 .cart-products p {
@@ -662,13 +745,14 @@ img {
     line-height: 18px;
     font-weight: 700;
     text-align: right;
+    margin-right: -3px;
 }
 
-.button-free, .button-quick-view, .button-mailing, .button-contacts, .button-popup {
+.button-free, .button-quick-view, .button-mailing, .button-contacts, .button-popup, .cart-submit {
     font-size: 18px;
     line-height: 36px;
     text-align: center;
-    padding: 5px 9px;
+    padding: 5px 9px;    
 }
 
 .free-raspberry .button {
@@ -1092,10 +1176,17 @@ img {
     border-radius: 50%;
 }
 
-.social-button:hover {
-    border: 4px solid rgba(255, 255, 255, 0.7);
+.social-button path {
+    opacity: 0.8;
 }
 
+.social-button:hover {
+    border: 4px solid rgba(255, 255, 255, 0.7);    
+}
+
+.social-button:hover path {
+    opacity: 1;
+}
 .links {
     position: relative;
     width: 380px;
@@ -1311,8 +1402,8 @@ img {
 .filter-input-radio+label::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -7px;
+    top: -4px;
+    left: -2px;
     height: 26px;
     width: 26px;
     background: url(../img/radio-off.svg) no-repeat;
@@ -1321,8 +1412,8 @@ img {
 .filter-input-radio:checked+label::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -7px;
+    top: -4px;
+    left: -2px;
     height: 26px;
     width: 26px;
     background: url(../img/radio-on.svg) no-repeat;
@@ -1381,20 +1472,20 @@ img {
 .filter-input-checkbox+label::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -5px;
-    height: 26px;
-    width: 26px;
+    top: -1px;
+    left: -4px;
+    height: 22px;
+    width: 22px;
     background: url(../img/checkbox-off.svg) no-repeat;
 }
 
 .filter-input-checkbox:checked+label::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -5px;
-    height: 26px;
-    width: 26px;
+    top: -1px;
+    left: -4px;
+    height: 22px;
+    width: 22px;
     background: url(../img/checkbox-on.svg) no-repeat;
 }
 
@@ -1472,7 +1563,8 @@ img {
     background-color: #ffffff;
 }
 
-.pagination-item-current a, .pagination-item a:active {
+.pagination-item-current a, .pagination-item a:active, 
+.pagination-item-current a:hover, .pagination-item a:active:hover {
     color: #323232;
     background-color: #ffffff;
     border-radius: 50%;
@@ -1575,5 +1667,5 @@ footer a:hover, footer a:active {
 .button-popup {
     width: 139px;
     margin-left: 289px;
-
 }
+
