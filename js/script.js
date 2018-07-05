@@ -1,9 +1,14 @@
-function hide(elementId) {
-    event.preventDefault();
-    document.getElementById(elementId).style.display = 'none';
-}
+var feedbackButton = document.getElementById("feedbackButton");
+var popup = document.getElementById("popup");
+var closeButton = document.getElementById("popup-close-button");
 
-function show(elementId) {
-    event.preventDefault();
-    document.getElementById(elementId).style.display = 'block';
-}
+feedbackButton.addEventListener("click", function (e) {
+  e.preventDefault();    
+  popup.classList.add("modal-show");
+});
+
+closeButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  popup.classList.remove("modal-show");
+});
+
