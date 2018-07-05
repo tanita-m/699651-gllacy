@@ -7,6 +7,8 @@ html, body {
     font-weight: 700;
     color: #ffffff;
 }
+
+
 .popup
 {
     display: none;
@@ -1226,8 +1228,12 @@ p.cart-total {
     box-shadow: inset 0px 2px 1px 0px #888888;
 }
 
-.social-button:active .shadow {  
+.social-button:active .shadow, .social-button svg:active {  
     display: block;    
+}
+/* MS11 fix */
+.social-button svg {
+    pointer-events: none;
 }
 
 .social-button:hover path {
@@ -1369,6 +1375,10 @@ p.cart-total {
     font-size: 16px;
 }
 
+.heading-style select::-ms-expand {
+    display: none;
+}
+
 .heading-style select:hover {
     background: rgba(255, 255, 255, 0.2) url(../img/icon-down-dir-hover.svg) no-repeat;
     background-position: 88%;
@@ -1390,6 +1400,10 @@ p.cart-total {
 .sort {
     color: #ffffff;
     background-color: #a9b9af;
+}
+
+.sort option {
+    color: #333333;
 }
 
 .sort:hover {
