@@ -1286,6 +1286,7 @@ p.cart-total {
 }
 
 .contacts {
+    position: relative;
     width: 251px;
     height: 255px;
     background-color: #fbfbfb;
