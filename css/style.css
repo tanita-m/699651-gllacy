@@ -157,8 +157,7 @@ img {
 }
 
 .form-control.form-control-search input {
-    width: 293px;
-    height: 41px;
+    width: 293px;    
     padding-left: 15px;
 }
 
@@ -643,6 +642,10 @@ button.cart-full::before {
     box-shadow: 0px 0px 0px 1px #b2b2b2;
     border-radius: 5px;
 }
+.form-control input {
+    height: auto;
+    padding: 10px 0 10px 10px;   
+}
 
 .form-control input:focus, .form-control textarea:focus, .form-control input:hover:focus, .form-control textarea:hover:focus {
     box-shadow: 0px 0px 0px 2px #2e88e4;
@@ -711,7 +714,8 @@ button.delete-product {
     border:none;
     background: url("../img/x-small.svg") no-repeat;    
     padding:0;
-    margin:0;   
+    margin:0;
+    cursor: pointer;   
 }
 .cart-table {
     border-collapse: collapse;    
@@ -1097,8 +1101,7 @@ p.cart-total {
 }
 
 .form-control-mailing input {
-    width: 352px;
-    height: 40px;
+    width: 352px;    
     padding-left: 14px;
     border-radius: 4px;
 }
@@ -1127,11 +1130,11 @@ p.cart-total {
 }
 
 .contacts {
-    width: 250px;
+    width: 251px;
     height: 255px;
     background-color: #fbfbfb;
     border-radius: 15px;
-    margin: 0px;
+    margin: 6px -3px 0px 0;
     padding: 25px 27px;
 }
 
@@ -1687,9 +1690,7 @@ footer a:hover, footer a:active {
 
 }
 .form-control-popup input {
-    width: 252px;
-    height: 41px;
-    
+    width: 252px;        
     border-radius: 6px;
     margin-bottom: 16px;  
     padding-left: 13px;    
