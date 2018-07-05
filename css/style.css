@@ -1195,6 +1195,7 @@ p.cart-total {
 
 .social-button {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -1217,6 +1218,8 @@ p.cart-total {
 .social-button .shadow {
     display: none;
     position: absolute;    
+    top: 0; 
+    left: 0;
     width: 32px;
     height: 32px;
     border-radius: 50px;
